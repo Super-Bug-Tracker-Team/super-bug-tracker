@@ -22,5 +22,6 @@
 - Change functionality to be a bug tracker more specifically
 - 
 ### Push Goals (would be nice, might not get to.... order by priority)
--
+- Add Google OAuth authentication
+- Assign teams for groups of users to collaborate on bugs
 -
