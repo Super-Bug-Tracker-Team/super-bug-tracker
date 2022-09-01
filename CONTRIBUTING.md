@@ -6,11 +6,11 @@ Instruction steps for contributors and team members working on the project.
 
 An example issues tab with issues as goals.
 
-![screenshot of issues tab on GitHub](assets/contributing-issues.jpg)
+![screenshot of issues tab on GitHub with example issues representing various stages of a project](assets/contributing-issues.jpg)
 
 Project goals and progress points will be split into separate issues. Team members will be able to self-assign or request assignment for each issue they wish to work on. Team members are encouraged to select issues that will give them a moderate challenge.
 
-Issues should also be created for any bugs discovered in the project. (Very minor fixes and typos do not require an issue and can but corrected directly in a pull request with a detailed description.)
+Issues should also be created for any bugs discovered in the project. (Very minor fixes and typos do not require an issue and can be corrected directly in a pull request with a detailed description.)
 
 # Editing code and submitting a pull request
 
@@ -48,12 +48,34 @@ After selecting your first issue use the following process to make your changes.
 
 1. Visit your fork on GitHub and a new button should appear allowing you to create the pull request
 
-    ![screenshot of Pull Request button on GitHub](assets/contributing-pr1.jpg)
+    ![screenshot of "Compare & pull request" button on GitHub](assets/contributing-pr1.jpg)
 
 1. Write a description that mentions the issue number then click "Create pull request"
 
-    ![screenshot of Pull Request description on GitHub](assets/contributing-pr2.jpg)
+    ![screenshot of "Create pull request" button on GitHub](assets/contributing-pr2.jpg)
 
 ## Merging pull requests
 
+When there are open pull requests team members have the ability to merge them back into the repo. Try to get other team members to review and merge your code for you. They will be able to catch things you might have missed or make further requests or suggestions. The steps to merge code are below.
+
+1. In the pull requests tab click on the pull request you want to merge and you will be brought to this screen.
+
+    ![screenshot of Merge page on GitHub](assets/contributing-merge1.jpg)
+
+1. Do not automatically merge requests. You can click on the various tabs at the top to see the commit messages and merge checks. The files changed tab will quickly show you everything that is changed line by line.
+
+    ![screenshot of Files changed tab showing a diff report on GitHub](assets/contributing-merge2.jpg)
+
+1. Once you are satisfied with all the changes you can click "Merge pull request"
+
+    ![screenshot of "Merge pull request" button on GitHub](assets/contributing-merge3.png)
+
+1. Do not get got. You also have to click "Confirm merge" to complete the pull request
+
+    ![screenshot of Pull Request "Confirm merge" button on GitHub](assets/contributing-merge4.jpg)
+
 ## Syncing your fork
+
+![screenshot of "Sync fork" button on GitHub](assets/contributing-sync.jpg)
+
+Try keep your fork up to date after any pull requests are merged by clicking on "Sync fork" on your forked repository. This will help avoid merge conflicts the next time you submit a pull request. 
