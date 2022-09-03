@@ -8,25 +8,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Todos</h1>
-    <ul>
-    <% todos.forEach( el => { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span class='del'> Delete </span>
-            </li>
-    <% }) %>    
-    </ul>
+    <div class="main-container">
+        <h1>Bug Tracker</h1>
+        <div class="second-container">
+            <form action="/todos/createTodo" method='POST'>
+                <input type="date" name="date">
+                <input type="text" placeholder="Enter The Project" name='todoItem'>
+                <textarea type="text" cols="45" rows="6" name="desc">Description </textarea>
+                <select name="status" id="status">
+                    <option value="high" selected>High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <button type="submit"><span></span>Add New Bug</button>
+            </form>
+        </div>
+    </div>
 
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
-
-    <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-        <input type="submit">
-    </form>
+    <div class="bug-list-container">
+        <ul class="bug-list">
+        <% todos.forEach( el => { %>
+                <li class='bug-item' data-id='<%=el._id%>'>
+                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.date %></div>
+                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></div>
+                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.desc %></div>
+                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.status %></div>
+                    <a class='del'><span>Delete</span>  </a>
+                </li>
+        <% }) %>    
+        </ul>
+        <h2><%= user.userName %> has <%= left %> bugs to handle! </h2>
+    </div>
 
     <a href="/logout">Logout</a>
-
     <script src="js/main.js"></script>
 </body>
 </html>
