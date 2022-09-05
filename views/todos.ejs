@@ -31,7 +31,9 @@
         <ul class="bug-list">
         <% todos.forEach( el => { %>
                 <li class='bug-item' data-id='<%=el._id%>'>
-                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.date %></div>
+                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'>
+                        <%= `${el.date.getMonth() + 1}/${el.date.getDate()}/${el.date.getFullYear()}` %>
+                    </div>
                     <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></div>
                     <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.desc %></div>
                     <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.status %></div>
