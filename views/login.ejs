@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bugbackdrop.css">
+    <title>Super Bug Tracker</title>
 </head>
 <body>
+
     <% if (locals.messages.errors) { %>
         <% messages.errors.forEach( el => { %>
             <div class="alert alert-danger"><%= el.msg %></div>
@@ -17,10 +20,51 @@
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
-    <form action="/login" method="POST">
+    <form action="/login" method="POST" class="login">
         <input type="email" name="email" placeholder="Email">
         <input type="password" name="password" placeholder="Password">
         <input type="submit">
     </form>
+
+<!-- 
+
+Bugs Galore!
+
+ -->
+ <section>
+    <h2>
+       Super Bug Tracker!
+      </h2>
+
+  </div>
+     <div class="bug">
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>        
+     </div>
+     
+     <div class="bug bug1">
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>   
+     </div>
+     
+     <div class="bug bug2">
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>
+        <div><img src="images/bug.svg" height="75px" width="75px"></div>  
+     </div>
+     </section>
 </body>
 </html>
