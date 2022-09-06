@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="https://cdn.glitch.global/6103ec87-7cd1-4e3e-92fd-0e50a3625728/favicon.ico"/>
     <script src="https://kit.fontawesome.com/48bc1d1094.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Super Bug Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&family=Quicksand:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="main-container">
-        <h1>Bug Tracker</h1>
+        <h1>Super Bug Tracker</h1>
         <div class="second-container">
             <form action="/todos/createTodo" method='POST'>
-                <input type="date" name="date">
-                <input type="text" placeholder="Enter The Project" name='todoItem'>
+                <div class="form-header">    
+                    <input type="text" placeholder="Enter The Project" name='todoItem'>
+                    <input type="date" name="date">
+                </div>
                 <textarea type="text" cols="45" rows="6" name="desc">Description </textarea>
                 <select name="status" id="status">
                     <option value="high" selected>High</option>
