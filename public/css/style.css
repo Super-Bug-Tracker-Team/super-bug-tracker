@@ -61,7 +61,7 @@ body {
 }
 
 h1{
-    color: red;
+    color: midnightblue;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -96,12 +96,14 @@ select,
 button{
     border-radius: 5px;
     padding: 7px;
-    border: 1px solid brown;
+    border: 1px solid black;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.6rem;
+    margin-bottom: 25px;
 }
 button{
-    background-color:aquamarine;
+    background-color:midnightblue;
+    color: whitesmoke
 }
 button:hover{
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.24), 0 15px 25px 0 rgba(0,0,0,0.2);
@@ -145,15 +147,34 @@ ul > li > *{
     margin: 0 auto;
     max-width: 900px;
     background-color: white;
-     border-radius: 5px;
+    border-radius: 5px;
+    line-height: 1.3;
 }
 .bug-item{
 
     margin: 20px 0;
 }
+.bug-item div:first-child,
+.bug-item div:nth-child(2){
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2;
+}
+.bug-item div:nth-child(4),
+a{
+    line-height: 2;
+    font-weight: bold;
+}
+.bug-item div:nth-child(3){
+    text-indent: 2rem;
+}
 .del{
     color: red;
     text-decoration: underline;
+}
+
+.bug-list-container li{
+    padding : 0 15px;
 }
 
 body > a{

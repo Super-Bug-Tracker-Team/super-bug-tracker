@@ -21,7 +21,7 @@
                     <input type="text" placeholder="Enter The Project" name='todoItem'>
                     <input type="date" name="date">
                 </div>
-                <textarea type="text" cols="45" rows="6" name="desc">Description </textarea>
+                <textarea type="text" cols="45" rows="6" name="desc" placeholder="Description"></textarea>
                 <select name="status" id="status">
                     <option value="high" selected>High</option>
                     <option value="medium">Medium</option>
@@ -38,10 +38,10 @@
                 <li class='bug-item' data-id='<%=el._id%>'>
                     <div class='<%= el.completed === true ? 'completed' : 'not'%>'>
                         <%= `${el.date.getMonth() + 1}/${el.date.getDate()}/${el.date.getFullYear()}` %>
-                    </div>
+                    </div> - 
                     <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></div>
-                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.desc %></div>
-                    <div class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.status %></div>
+                    <div><p><%= el.desc %></p></div>
+                    <div><%= el.status %></div>
                     <a class='del'><span>Delete</span>  </a>
                 </li>
         <% }) %>    
