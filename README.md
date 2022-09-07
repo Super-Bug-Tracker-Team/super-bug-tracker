@@ -4,6 +4,9 @@ A Simple Bug Tracker that is built using the MVC Architecture, we have also impl
 
 ---
 
+![Short demo video. Submitting a bug report and having it display on screen.](assets/demo.gif)
+---
+
 > Be sure to add that lovely star 😀 and fork it for your own copy
 
 ---
