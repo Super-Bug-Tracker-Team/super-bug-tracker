@@ -1,10 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+	content: none;
+}
+table {
+    border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    background: linear-gradient(115deg, #fdfcfb, #e2d1c3);
+    font-size: 1.6rem;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
 h1{
     color: red;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
 }
+
+.main-container{
+    text-align: center;
+}
+
+
+form{
+    min-width: 175px;
+    min-height: 40vh;
+    width: 100%;
+    max-width: 900px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.form-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input,
+textarea,
+select,
+button{
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid brown;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+}
+button{
+    background-color:aquamarine;
+}
+button:hover{
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.24), 0 15px 25px 0 rgba(0,0,0,0.2);
+}
+button:active{
+    transform: translateY(2px);
+}
+
+textarea {
+    box-sizing: border-box;
+	width: 100%;
+}
+
+select,
+button{
+    align-self: flex-end;
+}
+
+
 .completed{
     text-decoration: line-through;
     color: gray;
 }
 .not{
     text-decoration: underline;
+}
+
+.bug-list-container *{
+    font-family: 'Eczar', serif;
+}
+
+
+ul{
+    padding: 5px 0;
+}
+ul > li > *{
+    display: inline;
+    font-size: 1.6rem;
+}
+.bug-list-container{
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: white;
+     border-radius: 5px;
+}
+.bug-item{
+
+    margin: 20px 0;
+}
+.del{
+    color: red;
+    text-decoration: underline;
+}
+
+body > a{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
